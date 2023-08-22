@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter the Number</h1>
+    <label for="num1" >Enter 1st number</label><br>
+    <input type="number" id="num1" name="num2" placeholder="enter 1st num" ><br>
+    <label for="num2" >Enter 2nd number</label><br>
+    <input type="number" id="num2" name="num2"  placeholder="enter 2nd num" ><br><br>
+    <button onclick="sub()">Math</button>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+    <script>
+        function sub(){
+        var a= parseInt(document.getElementById("num1").value);
+        var b= parseInt(document.getElementById("num2").value);
+        var c=a+b;
+        var d=a-b;
+        var e=a*b;
+        var f=a/b;
+        document.getElementById("add").innerHTML="Result is="+c;
+        document.getElementById("sub").innerHTML="Result is="+d;
+        document.getElementById("mul").innerHTML="Result is="+e;
+        document.getElementById("div").innerHTML="Result is="+f;
+    
+        }
+    </script>
+</body>
+</html>
